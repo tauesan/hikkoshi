@@ -20,9 +20,10 @@
     nav a { text-decoration:none; color:var(--muted); font-size:14px; font-weight:700; padding:12px 2px; border-bottom:3px solid transparent; transition:color .15s,border-color .15s; }
     nav a:hover, nav a:focus-visible { border-color:var(--blue); color:var(--blue); }
     main { padding-top:22px; padding-bottom:42px; }
-    .participants { display:flex; align-items:baseline; gap:18px; padding:0 0 24px; margin-bottom:8px; }
-    .participants h2 { font-size:12px; white-space:nowrap; margin:0; color:var(--muted); }
-    .participants p { margin:0; font-size:14px; }
+    .participants { text-align:center; border-block:1px solid #ccdceb; padding:16px 0 18px; margin-bottom:8px; }
+    .participants h2 { font-size:12px; margin:0 0 8px; color:var(--blue); }
+    .participant-list { display:flex; justify-content:center; flex-wrap:wrap; column-gap:14px; row-gap:2px; list-style:none; margin:0; padding:0; font-size:14px; font-weight:600; }
+    .participant-list li + li::before { content:"·"; color:#91a5ba; margin-right:14px; }
     .layout { display:grid; grid-template-columns:minmax(0,1fr); gap:34px; }
     section { scroll-margin-top:24px; min-width:0; }
     h2 { font-size:20px; color:#1a365d; line-height:1.5; margin:0 0 22px; }
@@ -62,7 +63,7 @@
     th:nth-child(4) { width:24%; }
     :focus-visible { outline:2px solid var(--blue); outline-offset:4px; }
     footer { border-top:1px solid var(--line); color:var(--muted); font-size:11px; padding:22px 0; text-align:center; }
-    @media(max-width:640px) { .wrap { padding-left:18px; padding-right:18px; } .participants { align-items:flex-start; gap:12px; } .day { grid-template-columns:62px minmax(0,1fr); gap:12px; } .day::before { top:72px; left:30px; } .day > div:last-child { padding:15px; } h1 { font-size:25px; } .date strong { font-size:27px; } .heading { padding-top:28px; } nav { gap:22px; } }
+    @media(max-width:640px) { .wrap { padding-left:18px; padding-right:18px; } .participants { padding:14px 0 16px; } .participant-list { column-gap:11px; font-size:13px; } .participant-list li + li::before { margin-right:11px; } .day { grid-template-columns:62px minmax(0,1fr); gap:12px; } .day::before { top:72px; left:30px; } .day > div:last-child { padding:15px; } h1 { font-size:25px; } .date strong { font-size:27px; } .heading { padding-top:28px; } nav { gap:22px; } }
     @media(max-width:380px) { .wrap { padding-left:12px; padding-right:12px; } h1 { font-size:23px; } .day { grid-template-columns:58px minmax(0,1fr); gap:10px; } .day::before { top:69px; left:28px; } .date strong { font-size:24px; } .day > div:last-child { padding:13px; } .time { display:block; margin-right:0; margin-bottom:2px; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } nav a { transition:none; } }
     @media print { body { background:white; font-size:11px; } .wrap { max-width:none; padding:0; } header { border-top:0; } .heading { padding:0 0 14px; } h1 { font-size:24px; } nav { display:none; } main { padding-top:12px; } .participants { padding-bottom:14px; } .layout { display:block; } .day { padding-bottom:10px; gap:12px; grid-template-columns:58px minmax(0,1fr); } .day::before { left:28px; } .date { background:white !important; color:#244b73; box-shadow:none; border:1px solid var(--line); } .date strong { font-size:11px; } .day > div:last-child { padding:10px 14px; box-shadow:none; } .events li { font-size:11px; padding:4px 0; } .events .appointment { background:transparent; margin:4px 0; padding:5px 9px; } aside { padding-top:16px; } .capacity { background:transparent; } table { font-size:11px; } th, td { padding:5px; } h2, .aside-section h2 { font-size:16px; } h3 { font-size:13px; } .note { font-size:10px; } .time { display:inline-block; margin-bottom:0; } footer { margin-top:16px; } }
@@ -82,7 +83,9 @@
   <main class="wrap">
     <section class="participants" aria-labelledby="participants-title">
       <h2 id="participants-title">参加する人</h2>
-      <p>順子、晃靖、和也、恵、佳奈子、時流、美友紀、燈</p>
+      <ul class="participant-list" aria-label="参加者一覧">
+        <li>順子</li><li>晃靖</li><li>和也</li><li>恵</li><li>佳奈子</li><li>時流</li><li>美友紀</li><li>燈</li>
+      </ul>
     </section>
     <div class="layout">
       <section id="schedule" aria-labelledby="schedule-title">
