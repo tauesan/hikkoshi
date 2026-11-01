@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>新居引っ越しスケジュール | 2026年11月〜12月</title>
+  <style>
+    :root { color-scheme:light; --ink:#263445; --muted:#57677a; --blue:#2b6cb0; --line:#dee7f0; --paper:#fff; --accent:#b45323; --shadow:0 3px 14px rgb(35 65 95 / 6%); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:linear-gradient(180deg,#eaf2fa 0,#f0f5fa 480px); font-family:"Hiragino Kaku Gothic ProN",Meiryo,"Yu Gothic",sans-serif; font-size:15px; line-height:1.8; letter-spacing:0; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; }
+    .wrap { max-width:900px; margin:auto; padding:0 28px; }
+    header { border-top:4px solid var(--blue); }
+    .heading { padding-top:38px; padding-bottom:0; text-align:center; }
+    .eyebrow { color:var(--blue); font-size:11px; font-weight:700; margin:0 0 10px; }
+    h1 { color:#1a365d; font-size:29px; font-weight:800; line-height:1.5; margin:0 0 12px; overflow-wrap:anywhere; }
+    .period { color:var(--muted); font-size:14px; margin:0; }
+    nav { display:flex; justify-content:center; gap:26px; margin-top:24px; border-bottom:1px solid #ccdceb; flex-wrap:wrap; }
+    nav a { text-decoration:none; color:var(--muted); font-size:14px; font-weight:700; padding:12px 2px; border-bottom:3px solid transparent; transition:color .15s,border-color .15s; }
+    nav a:hover, nav a:focus-visible { border-color:var(--blue); color:var(--blue); }
+    main { padding-top:22px; padding-bottom:42px; }
+    .participants { display:flex; align-items:baseline; gap:18px; padding:0 0 24px; margin-bottom:8px; }
+    .participants h2 { font-size:12px; white-space:nowrap; margin:0; color:var(--muted); }
+    .participants p { margin:0; font-size:14px; }
+    .layout { display:grid; grid-template-columns:minmax(0,1fr); gap:34px; }
+    section { scroll-margin-top:24px; min-width:0; }
+    h2 { font-size:20px; color:#1a365d; line-height:1.5; margin:0 0 22px; }
+    .section-label { color:var(--blue); font-size:10px; font-weight:700; margin:0 0 4px; }
+    .day { position:relative; display:grid; grid-template-columns:76px minmax(0,1fr); gap:20px; padding:0 0 20px; break-inside:avoid; }
+    .day::before { content:""; position:absolute; top:75px; bottom:0; left:37px; width:2px; background:#c4d9ee; }
+    .day:last-child::before { display:none; }
+    .date { position:relative; z-index:1; align-self:start; border-radius:8px; padding:8px 3px; background:linear-gradient(135deg,#2b6cb0,#3182ce); color:white; text-align:center; line-height:1.2; box-shadow:0 3px 8px rgb(43 108 176 / 16%); }
+    .date strong { font-size:30px; font-weight:700; line-height:1; display:block; margin-top:4px; font-variant-numeric:tabular-nums; }
+    .date .month, .date .weekday { display:block; font-size:10px; line-height:1; }
+    .date .weekday { margin-top:4px; }
+    .sat .date, .sun .date, .holiday .date { background:linear-gradient(135deg,#af4c43,#c9695c); }
+    .day > div:last-child { min-width:0; background:var(--paper); border:1px solid #e0e9f2; border-radius:8px; padding:18px 22px; box-shadow:var(--shadow); }
+    h3 { color:#244b73; font-size:16px; margin:0 0 10px; line-height:1.6; }
+    .events { list-style:none; padding:0; margin:0; }
+    .events li { margin:0; padding:9px 0; border-bottom:1px solid #edf2f7; overflow-wrap:anywhere; font-size:14px; }
+    .events li:last-child { border-bottom:0; padding-bottom:0; }
+    .time { display:inline-block; color:var(--blue); font-weight:700; margin-right:12px; font-variant-numeric:tabular-nums; }
+    .events .appointment { background:#edf5fe; border:0; border-left:3px solid #4299e1; border-radius:0 4px 4px 0; padding:10px 13px; margin:7px 0; }
+    .events .appointment:last-child { padding-bottom:10px; }
+    .note { display:block; color:var(--muted); font-size:12px; margin-top:3px; }
+    .pending { color:var(--muted); }
+    aside { border-top:1px solid #ccdceb; padding-top:30px; }
+    .aside-section h2 { font-size:18px; margin-bottom:16px; padding-bottom:12px; border-bottom:2px solid #adcdec; }
+    .capacity { background:#fff5e9; border-left:3px solid #d68a43; padding:12px 14px; margin:0 0 18px; font-size:13px; }
+    .capacity strong { color:#9b4c1d; }
+    table { border-collapse:collapse; table-layout:fixed; width:100%; font-size:13px; background:var(--paper); }
+    caption { text-align:left; color:var(--muted); font-size:12px; margin-bottom:10px; }
+    th { text-align:left; color:#365b80; background:#e5effa; font-size:12px; font-weight:700; }
+    th, td { border-bottom:1px solid var(--line); padding:11px 9px; vertical-align:top; }
+    tbody tr:nth-child(even) { background:#f7fafd; }
+    td:first-child, th:nth-child(1), .count, th:nth-child(2), td:last-child { white-space:nowrap; }
+    .count { font-weight:700; white-space:nowrap; color:var(--blue); }
+    th:nth-child(1) { width:26%; }
+    th:nth-child(2) { width:12%; }
+    th:nth-child(3) { width:38%; }
+    th:nth-child(4) { width:24%; }
+    :focus-visible { outline:2px solid var(--blue); outline-offset:4px; }
+    footer { border-top:1px solid var(--line); color:var(--muted); font-size:11px; padding:22px 0; text-align:center; }
+    @media(max-width:640px) { .wrap { padding-left:18px; padding-right:18px; } .participants { align-items:flex-start; gap:12px; } .day { grid-template-columns:62px minmax(0,1fr); gap:12px; } .day::before { top:72px; left:30px; } .day > div:last-child { padding:15px; } h1 { font-size:25px; } .date strong { font-size:27px; } .heading { padding-top:28px; } nav { gap:22px; } }
+    @media(max-width:380px) { .wrap { padding-left:12px; padding-right:12px; } h1 { font-size:23px; } .day { grid-template-columns:58px minmax(0,1fr); gap:10px; } .day::before { top:69px; left:28px; } .date strong { font-size:24px; } .day > div:last-child { padding:13px; } .time { display:block; margin-right:0; margin-bottom:2px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } nav a { transition:none; } }
+    @media print { body { background:white; font-size:11px; } .wrap { max-width:none; padding:0; } header { border-top:0; } .heading { padding:0 0 14px; } h1 { font-size:24px; } nav { display:none; } main { padding-top:12px; } .participants { padding-bottom:14px; } .layout { display:block; } .day { padding-bottom:10px; gap:12px; grid-template-columns:58px minmax(0,1fr); } .day::before { left:28px; } .date { background:white !important; color:#244b73; box-shadow:none; border:1px solid var(--line); } .date strong { font-size:11px; } .day > div:last-child { padding:10px 14px; box-shadow:none; } .events li { font-size:11px; padding:4px 0; } .events .appointment { background:transparent; margin:4px 0; padding:5px 9px; } aside { padding-top:16px; } .capacity { background:transparent; } table { font-size:11px; } th, td { padding:5px; } h2, .aside-section h2 { font-size:16px; } h3 { font-size:13px; } .note { font-size:10px; } .time { display:inline-block; margin-bottom:0; } footer { margin-top:16px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap heading">
+      <p class="eyebrow">2026 / NOVEMBER — DECEMBER</p>
+      <h1>新居引っ越しスケジュール</h1>
+      <p class="period">2026年11月16日（月）〜12月3日（木）</p>
+      <nav aria-label="ページ内メニュー">
+        <a href="#schedule">日別の予定</a><a href="#stay">宿泊人数</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="participants" aria-labelledby="participants-title">
+      <h2 id="participants-title">参加する人</h2>
+      <p>順子、晃靖、和也、恵、佳奈子、時流、美友紀、燈</p>
+    </section>
+    <div class="layout">
+      <section id="schedule" aria-labelledby="schedule-title">
+        <p class="section-label">SCHEDULE</p>
+        <h2 id="schedule-title">日別の予定</h2>
+        <article class="day">
+          <div class="date"><span class="month">11月</span><strong>16</strong><span class="weekday">月曜日</span></div>
+          <div><h3>引き渡し</h3><ul class="events"><li class="appointment"><span class="time">午後</span>新居の引き渡し</li></ul></div>
+        </article>
+        <article class="day">
+          <div class="date"><span class="month">11月</span><strong>18</strong><span class="weekday">水曜日</span></div>
+          <div><h3>表札のお届け</h3><ul class="events"><li class="appointment"><span class="time">到着予定</span>表札<span class="note">11月17日発送 / お届け先：門真</span></li></ul></div>
+        </article>
+        <article class="day">
+          <div class="date"><span class="month">11月</span><strong>20</strong><span class="weekday">金曜日</span></div>
+          <div><h3>ポケットWi-Fi受け取り</h3><ul class="events"><li class="appointment"><span class="time">お届け</span>無制限ポケットWi-Fi<span class="note">配送先：門真の自宅 / インターネット工事まで使用し、12月3日に返却</span></li></ul></div>
+        </article>
+        <article class="day sat">
+          <div class="date"><span class="month">11月</span><strong>21</strong><span class="weekday">土曜日</span></div>
+          <div><h3>新居での宿泊</h3>
+            <ul class="events">
+              <li><span class="time">7:30頃</span>和也を迎えに行って新居へ</li>
+              <li class="appointment"><span class="time">8:30〜15:00</span>カップボードのお届け<span class="note">荷受けが必要 / 設置は男性陣で実施</span></li>
+              <li><span class="time">午前</span>エアコンのお届け</li>
+              <li><span class="time">午前</span>ガスの開栓立ち会い</li>
+              <li><span class="time">11:30着</span>佳奈子</li>
+              <li><span class="time">16:00頃着</span>順子、晃靖</li>
+              <li>新居の写真をたくさん撮る</li>
+              <li>ご近所へ挨拶</li>
+              <li>インターネット工事（12月3日）までポケットWi-Fiを使用</li>
+              <li>宿泊準備：布団を3組用意<span class="note">既存1組、2組購入</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="day sun">
+          <div class="date"><span class="month">11月</span><strong>22</strong><span class="weekday">日曜日</span></div>
+          <div><h3>旧居の片づけ</h3>
+            <ul class="events">
+              <li><span class="time">朝</span>ともるを預ける</li>
+              <li class="appointment"><span class="time">13:00〜（予約）</span>エアコンの取り外し</li>
+              <li>時流・美友紀は旧居の片づけ</li>
+              <li><span class="time">夜</span>ともるを迎えに行く</li>
+              <li><span class="time">夜</span>和也が帰る</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day holiday">
+          <div class="date"><span class="month">11月</span><strong>23</strong><span class="weekday">月・祝</span></div>
+          <div><h3>引っ越し・荷ほどき</h3>
+            <ul class="events">
+              <li class="appointment"><span class="time">午前</span>引っ越し作業</li>
+              <li><span class="time">昼ごろ</span>順子、晃靖が帰る</li>
+              <li><span class="time">昼ごろ</span>恵が来る</li>
+              <li>荷ほどき</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day">
+          <div class="date"><span class="month">11月</span><strong>24</strong><span class="weekday">火曜日</span></div>
+          <div><h3>片づけ</h3><ul class="events"><li>時流は休み</li><li class="appointment"><span class="time">8:00</span>エアコン設置業者が来る</li><li>荷ほどき・新居の整理</li></ul></div>
+        </article>
+        <article class="day">
+          <div class="date"><span class="month">11月</span><strong>25</strong><span class="weekday">水曜日</span></div>
+          <div><h3>恵の滞在最終日</h3><ul class="events"><li>恵が帰る</li></ul></div>
+        </article>
+        <article class="day sun">
+          <div class="date"><span class="month">11月</span><strong>29</strong><span class="weekday">日曜日</span></div>
+          <div><h3>佳奈子の滞在最終日</h3><ul class="events"><li>佳奈子が帰る</li></ul></div>
+        </article>
+        <article class="day">
+          <div class="date"><span class="month">12月</span><strong>3</strong><span class="weekday">木曜日</span></div>
+          <div><h3>インターネット開通</h3><ul class="events"><li class="appointment">インターネット工事</li><li>ポケットWi-Fiを返却</li></ul></div>
+        </article>
+      </section>
+      <aside aria-label="宿泊人数">
+        <section id="stay" class="aside-section" aria-labelledby="stay-title">
+          <p class="section-label">OVERNIGHT STAY</p>
+          <h2 id="stay-title">各晩の宿泊人数</h2>
+          <p class="capacity"><strong>寝具数の目安</strong><br>1人1組で計算。順子、晃靖、和也の3人は布団2組で宿泊可能。</p>
+          <table>
+            <caption>時流・美友紀・燈を除く</caption>
+            <thead><tr><th scope="col">日付</th><th scope="col">人数</th><th scope="col">宿泊する人</th><th scope="col">必要な寝具</th></tr></thead>
+            <tbody>
+              <tr><td>11/21（土）</td><td class="count">4人</td><td>佳奈子、順子、晃靖、和也</td><td>布団3組</td></tr>
+              <tr><td>11/22（日）</td><td class="count">3人</td><td>佳奈子、順子、晃靖</td><td>布団3組</td></tr>
+              <tr><td>11/23（月・祝）</td><td class="count">2人</td><td>佳奈子、恵</td><td>布団2組</td></tr>
+              <tr><td>11/24（火）</td><td class="count">2人</td><td>佳奈子、恵</td><td>布団2組</td></tr>
+              <tr><td>11/25（水）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
+              <tr><td>11/26（木）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
+              <tr><td>11/27（金）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
+              <tr><td>11/28（土）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
+              <tr><td>11/29（日）</td><td class="count">0人</td><td>佳奈子が帰宅</td><td>なし</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <footer><div class="wrap">新居引っ越しスケジュール / 2026年11月〜12月</div></footer>
+</body>
+</html>
