@@ -41,6 +41,8 @@
     .events { list-style:none; padding:0; margin:0; }
     .events li { margin:0; padding:9px 0; border-bottom:1px solid #edf2f7; overflow-wrap:anywhere; font-size:14px; }
     .events li:last-child { border-bottom:0; padding-bottom:0; }
+    .bedding-list { display:flex; flex-wrap:wrap; gap:8px; list-style:none; margin:0 0 18px; padding:0; }
+    .bedding-list li { border:1px solid #d5e4f2; border-radius:999px; background:#f3f8fd; color:#365b80; font-size:12px; font-weight:600; line-height:1.5; padding:6px 11px; overflow-wrap:anywhere; }
     .time { display:inline-block; color:var(--blue); font-weight:700; margin-right:12px; font-variant-numeric:tabular-nums; }
     .events .appointment { background:#edf5fe; border:0; border-left:3px solid #4299e1; border-radius:0 4px 4px 0; padding:10px 13px; margin:7px 0; }
     .events .appointment:last-child { padding-bottom:10px; }
@@ -96,6 +98,10 @@
           <div><h3>引き渡し・電気・ガス開始</h3><ul class="events"><li class="appointment"><span class="time">13:00</span>新居の引き渡し</li><li class="appointment"><span class="time">13:00〜15:00</span>電気・ガスの使用開始</li></ul></div>
         </article>
         <article class="day">
+          <div class="date"><span class="month">11月</span><strong>18</strong><span class="weekday">水曜日</span></div>
+          <div><h3>表札のお届け</h3><ul class="events"><li class="appointment"><span class="time">到着予定</span>表札<span class="note">11月17日発送 / お届け先：門真</span></li></ul></div>
+        </article>
+        <article class="day">
           <div class="date"><span class="month">11月</span><strong>20</strong><span class="weekday">金曜日</span></div>
           <div><h3>ポケットWi-Fi受け取り</h3><ul class="events"><li class="appointment"><span class="time">お届け</span>無制限ポケットWi-Fi<span class="note">配送先：門真の自宅 / インターネット工事まで使用し、12月3日に返却</span></li></ul></div>
         </article>
@@ -105,16 +111,13 @@
             <ul class="events">
               <li><span class="time">7:30頃</span>和也を迎えに行って新居へ</li>
               <li class="appointment"><span class="time">8:30〜15:00</span>カップボードのお届け<span class="note">荷受けが必要 / 設置は男性陣で実施</span></li>
+              <li>冷蔵庫のお届け</li>
               <li><span class="time">午前</span>エアコンのお届け</li>
-              <li><span class="time">お届け</span>冷蔵庫</li>
-              <li><span class="time">お届け</span>バーチカルブラインド</li>
-              <li><span class="time">11:30着</span>佳奈子</li>
-              <li class="appointment"><span class="time">16:00〜</span>外構植栽打ち合わせ</li>
-              <li><span class="time">19:00</span>時流、美友紀、ともるは旧居へ帰る</li>
+              <li><span class="time">12:00ごろ着</span>佳奈子</li>
               <li><span class="time">20:00頃着</span>健成、順子、晃靖<span class="note">新岡山港を17:00に出発</span></li>
               <li>新居の写真をたくさん撮る</li>
               <li>ご近所へ挨拶</li>
-              <li>宿泊準備：布団を3組用意<span class="note">既存1組、2組購入</span></li>
+              <li>宿泊準備：布団6組を確保<span class="note">時流・美友紀・燈の3人で2組</span></li>
             </ul>
           </div>
         </article>
@@ -122,11 +125,12 @@
           <div class="date"><span class="month">11月</span><strong>22</strong><span class="weekday">日曜日</span></div>
           <div><h3>旧居の片づけ</h3>
             <ul class="events">
-              <li><span class="time">朝</span>ともるを預ける</li>
+              <li><span class="time">朝</span>時流・美友紀は旧居へ移動</li>
               <li class="appointment"><span class="time">13:00〜（予約）</span>エアコンの取り外し</li>
               <li>時流・美友紀は旧居の片づけ</li>
-              <li><span class="time">夜</span>ともるを迎えに行く</li>
+              <li><span class="time">夜</span>時流・美友紀は新居へ帰る</li>
               <li><span class="time">夜</span>和也が帰る</li>
+              <li><span class="time">21:00</span>恵が来る</li>
             </ul>
           </div>
         </article>
@@ -135,9 +139,7 @@
           <div><h3>引っ越し・荷ほどき</h3>
             <ul class="events">
               <li class="appointment"><span class="time">午前</span>引っ越し作業</li>
-              <li class="appointment"><span class="time">午後</span>洗濯機の取り付け</li>
-              <li><span class="time">昼ごろ</span>健成、順子、晃靖が帰る</li>
-              <li><span class="time">昼ごろ</span>恵が来る</li>
+              <li><span class="time">夕方</span>健成、順子、晃靖が帰る</li>
               <li>荷ほどき</li>
             </ul>
           </div>
@@ -152,7 +154,7 @@
         </article>
         <article class="day sun">
           <div class="date"><span class="month">11月</span><strong>29</strong><span class="weekday">日曜日</span></div>
-          <div><h3>佳奈子の滞在最終日・旧居の退去</h3><ul class="events"><li>佳奈子が帰る</li><li class="appointment"><span class="time">9:00〜12:00</span>旧居の電気・ガス停止<span class="note">退去の立ち会いが必要な可能性あり</span></li></ul></div>
+          <div><h3>滞在最終日・旧居の退去</h3><ul class="events"><li>佳奈子が帰る</li><li class="appointment"><span class="time">9:00〜12:00</span>旧居の電気・ガス停止<span class="note">退去の立ち会いが必要な可能性あり</span></li></ul></div>
         </article>
         <article class="day">
           <div class="date"><span class="month">12月</span><strong>2</strong><span class="weekday">水曜日</span></div>
@@ -167,20 +169,29 @@
         <section id="stay" class="aside-section" aria-labelledby="stay-title">
           <p class="section-label">OVERNIGHT STAY</p>
           <h2 id="stay-title">各晩の宿泊人数</h2>
-          <p class="capacity"><strong>寝具数の目安</strong><br>1人1組で計算。順子、晃靖、和也の3人は布団2組で宿泊可能。</p>
+          <h3>用意する寝具</h3>
+          <ul class="bedding-list">
+            <li>既に持っている布団</li>
+            <li>既に持っているマットレス</li>
+            <li>今回購入するマットレス</li>
+            <li>今回購入するマットレス</li>
+            <li>定森家用エアマットレス</li>
+            <li>杉本家から持ってくる布団</li>
+            <li>和也家から持ってくる布団</li>
+          </ul>
+          <p class="capacity"><strong>寝具数の目安</strong><br>1人1組で計算。順子、晃靖、和也の3人は布団2組、時流・美友紀・燈の3人も布団2組で宿泊可能。</p>
           <table>
-            <caption>時流・美友紀・燈を除く</caption>
             <thead><tr><th scope="col">日付</th><th scope="col">人数</th><th scope="col">宿泊する人</th><th scope="col">必要な寝具</th></tr></thead>
             <tbody>
-              <tr><td>11/21（土）</td><td class="count">5人</td><td>健成、佳奈子、順子、晃靖、和也</td><td>布団4組</td></tr>
-              <tr><td>11/22（日）</td><td class="count">4人</td><td>健成、佳奈子、順子、晃靖</td><td>布団4組</td></tr>
-              <tr><td>11/23（月・祝）</td><td class="count">2人</td><td>佳奈子、恵</td><td>布団2組</td></tr>
-              <tr><td>11/24（火）</td><td class="count">2人</td><td>佳奈子、恵</td><td>布団2組</td></tr>
-              <tr><td>11/25（水）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
-              <tr><td>11/26（木）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
-              <tr><td>11/27（金）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
-              <tr><td>11/28（土）</td><td class="count">1人</td><td>佳奈子</td><td>布団1組</td></tr>
-              <tr><td>11/29（日）</td><td class="count">0人</td><td>佳奈子が帰宅</td><td>なし</td></tr>
+              <tr><td>11/21（土）</td><td class="count">8人</td><td>佳奈子、健成、順子、晃靖、和也、時流、美友紀、燈</td><td>布団6組</td></tr>
+              <tr><td>11/22（日）</td><td class="count">8人</td><td>佳奈子、健成、順子、晃靖、恵、時流、美友紀、燈</td><td>布団6組</td></tr>
+              <tr><td>11/23（月・祝）</td><td class="count">5人</td><td>佳奈子、恵、時流、美友紀、燈</td><td>布団4組</td></tr>
+              <tr><td>11/24（火）</td><td class="count">5人</td><td>佳奈子、恵、時流、美友紀、燈</td><td>布団4組</td></tr>
+              <tr><td>11/25（水）</td><td class="count">4人</td><td>佳奈子、時流、美友紀、燈</td><td>布団3組</td></tr>
+              <tr><td>11/26（木）</td><td class="count">4人</td><td>佳奈子、時流、美友紀、燈</td><td>布団3組</td></tr>
+              <tr><td>11/27（金）</td><td class="count">4人</td><td>佳奈子、時流、美友紀、燈</td><td>布団3組</td></tr>
+              <tr><td>11/28（土）</td><td class="count">4人</td><td>佳奈子、時流、美友紀、燈</td><td>布団3組</td></tr>
+              <tr><td>11/29（日）</td><td class="count">3人</td><td>時流、美友紀、燈（佳奈子が帰宅）</td><td>布団2組</td></tr>
             </tbody>
           </table>
         </section>
